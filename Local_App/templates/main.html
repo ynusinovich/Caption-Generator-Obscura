@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='styles.css') }}">
+
+<head>
+    <title>Caption Generator Obscura</title>
+</head>
+
+<div class = "headings">
+<h1 align = "center">Caption Generator Obscura</h1>
+<h2 align = "center">An Atlas Obscura-based caption generator.</h2>
+</div>
+
+<div class = "inputs"> 
+<form action = "{{ url_for('main') }}" method = "POST" enctype = "multipart/form-data">
+    <fieldset>
+        <legend align = "center">Input values:</legend>
+        How unpredictable do you want your caption to be, on a scale of 1 to 20? Unpredictable captions are less literal and more varied.
+        <input class = "random" name = "randomness" min = "1" max = "20" type = "number" required>
+        <br>
+        <input type = "file" id = "myimage" name = "filename">
+        <input type = "submit">
+        <br>
+    </fieldset>
+</form>
+<br>
+</div>
+
+{% if result %}
+    <div class = "result" align = "center">
+        <img class = "image" src = "{{ original_path }}" style = "display: block;  margin: auto 40px;  width: 70%;">
+        <p>With an unpredictability scale of {{ original_randomness }}, the suggested caption is:</p>
+        <p class = "output" style = "font-size:50px">{{ result }}</p>
+    </div>
+{% endif %}
+
+</html>

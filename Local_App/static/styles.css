@@ -1,0 +1,75 @@
+h1 {
+	background-color: #fcfaf6; 
+	opacity: 0.5;	
+	margin: auto;
+}
+
+h2 {
+	background-color: #fcfaf6; 
+	opacity: 0.5;
+	margin: auto;	
+}
+
+.headings {
+	background-color: #fcfaf6; 
+	opacity: 0.5;
+	margin: auto;	
+	width: 40%;
+	border: 3px solid green;
+}
+
+form {
+	background-color: #fcfaf6; 
+	opacity: 0.5;
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+}
+
+fieldset {
+	background-color: #fcfaf6; 
+	opacity: 0.5;
+    margin: 0;
+    padding: 10px;
+    display: inline-block
+    width: auto;
+    min-width: 0;
+    max-width: none;
+}
+
+.result {
+	background-color: #fcfaf6; 
+	opacity: 0.5;
+    margin: auto;
+    width: 80%;
+    border: 3px solid green;
+  	padding: 10px;
+}
+
+.output {
+	background-color: #fcfaf6; 
+	opacity: 0.5;
+    margin: 0px;
+}
+
+.inputs {
+	background-color: #fcfaf6; 
+	opacity: 0.5;
+	margin: auto;
+    width: 40%;
+    border: 3px solid green;
+  	padding: 10px;
+  	margin-top: 10px;
+}
+
+legend {
+	background-color: #fcfaf6; 
+	opacity: 0.5;
+	margin: auto;
+}
+
+body {
+	background-image: url('images/old-map-background.jpg');
+	margin: auto;
+	padding: 40px;
+}
