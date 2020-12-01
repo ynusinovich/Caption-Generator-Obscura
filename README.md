@@ -2,7 +2,7 @@
 # README
 
 ## Problem Statement
-Have you ever tried to post your travel photographs, and had a brain freeze about how to caption them? With my program, you can upload your photograph, and it will generate a suggested caption for you. The program is trained on 19,500 travel photos and captions from Atlas Obscura.
+Have you ever tried to post your travel photographs, and had a brain freeze about how to caption them? With my program, you can upload your photograph, and it will generate a suggested caption for you. The program is trained on 19,500 travel photos and captions from Atlas Obscura. See the resulting web app here: caption-generator-obscura.herokuapp.com/
 
 ## Executive Summary
 The goal of this project was to create an interactive model that can be used to generate a caption for an uploaded travel photograph. For this project, I differentiated my model from other caption generators by training it on about 19,500 captions and images from Atlas Obscura, a travel website that catalogs unusual and obscure travel destinations. The intention was not for the model to be able to perfectly identify each part of each image, but, rather, for the model to understand the general idea of an image and create an appropriate and entertaining caption. The inherent limitation was that the model, given the creative captions on the website, may fail to generate anything sensical at all. The model resulted in a single-word BLEU Score of about 8.5%, which was lower than my expected benchmark of 15%. Allowing the program to choose from among the model's top 7 predicted next caption words, rather than picking the top one, raised the BLEU score slightly to about 9%.
