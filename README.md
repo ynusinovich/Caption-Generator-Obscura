@@ -33,9 +33,9 @@ Predict image captions for blind users for images that don’t have alt text or 
     - Create Data Generator
     - Embed Captions with Pre-Trained GloVe Vector
     - Run Image Data Through Custom Model
-- Train Model (Using .py File)
-- Reload Model and Make Predictions (Using .py File)
-- Model Evaluation Using BLEU Score (Using .py File)
+- Train Model
+- Reload Model and Make Predictions
+- Model Evaluation Using BLEU Score
 
 ## Data Dictionary
 |Feature or Term|Type|Description|
